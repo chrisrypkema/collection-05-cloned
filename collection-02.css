@@ -1,0 +1,223 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+}
+
+h1 {
+    font-weight: normal;
+    padding: 3px 20px 10px 0;
+    margin: 0;
+    float: left;
+}
+
+#container {
+    padding: 10px 20px 20px 20px;
+    border-bottom: solid 1px #000;
+}
+
+ul {
+    font-size: 130px;
+    line-height: 140px;
+    padding:20px;
+    margin: 0;
+}
+
+li.signup {
+    display: inline;
+    margin: 0;
+    line-height: 36px;
+}
+
+.delete {
+    color:red;
+    text-decoration:none;  
+}
+
+.new_entry_button {
+    width: 15%;
+    font-size: 27px;
+    font-family: helvetica, sans-serif;
+    font-weight: normal;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    position: fixed; top: 0; left: 0;
+    border: 1px solid black;
+    float: left;
+}
+
+.cancel_entry_button {
+    width: 15%;
+    font-size: 27px;
+    font-weight: normal;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    position: fixed; top: 0; left: 0;
+    border: 1px solid black;
+    float: left;
+}
+
+.basic {
+    width: 100%;
+    display: inline;
+    height:56px;
+    font-size: 27px;
+    font-family: helvetica, sans-serif;
+    font-weight: normal;
+    margin-left: 15%;
+    padding: 0px;
+    position: fixed; top: 0;
+    background-color: black;
+}
+
+.basic input {
+    font-size: 27px;
+    font-family: helvetica, sans-serif;
+    font-weight: normal;
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px 5px 5px 10px;
+}
+    
+    
+.basic input[name=submit] {
+    width: 20%;
+    position: fixed; top: 0;
+    background-color: black;
+    color: white;
+}
+    
+.styled-select select {
+   background: white;
+   display: inline;
+   font-size: 27px;
+   font-weight: normal;
+    font-family: helvetica, sans-serif;
+   border: 1px solid black;
+   margin: 5px;
+   padding: 5px 5px 5px 10px;
+   border: 0;
+   border-radius: 0;
+   -webkit-appearance: none;
+}
+
+.styled-select  {
+   display: inline;
+}
+   
+.ui-autocomplete-input {
+   background: white;
+   font-size: 27px;
+   font-weight: normal;
+    font-family: helvetica, sans-serif;
+   border: 1px solid black;
+   margin: 5px;
+   padding: 5px 5px 5px 10px;
+   border: 0;
+   border-radius: 0;
+}
+
+.signup.matched-name, .signup .name:hover {
+background: linear-gradient(108deg, #ff9600, #ffff00, #ff9600, #ffff00);
+background-size: 800% 800%;
+
+-webkit-animation: AnimationName 11s ease infinite;
+-moz-animation: AnimationName 11s ease infinite;
+animation: AnimationName 11 s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+
+
+.signup.matched-selector, .signup .selector:hover {
+background: linear-gradient(48deg, #00ffdc, #00ff00, #00ffdc, #00ff00);
+background-size: 800% 800%;
+
+-webkit-animation: AnimationName 8s ease infinite;
+-moz-animation: AnimationName 8s ease infinite;
+animation: AnimationName 8s ease infinite;
+
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+
+.signup.matched-fail, .signup .fail:hover {
+background: linear-gradient(48deg, #00ffff, #007eff, #00ffff, #007eff);
+background-size: 800% 800%;
+
+-webkit-animation: AnimationName 11s ease infinite;
+-moz-animation: AnimationName 11s ease infinite;
+animation: AnimationName 11s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+
+.signup.matched-punctuation, .signup .punctuation:hover {
+background: linear-gradient(270deg, #ff0000, #ff00ff, #ff0000, #ff00ff);
+background-size: 800% 800%;
+
+-webkit-animation: AnimationName 11s ease infinite;
+-moz-animation: AnimationName 11s ease infinite;
+animation: AnimationName 11s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 63%}
+    50%{background-position:100% 38%}
+    100%{background-position:0% 63%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 63%}
+    50%{background-position:100% 38%}
+    100%{background-position:0% 63%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 63%}
+    50%{background-position:100% 38%}
+    100%{background-position:0% 63%}
+}

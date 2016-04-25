@@ -1,0 +1,71 @@
+<head>
+  <title>Collective Failing</title>
+</head>
+
+<body>
+  <!--<div id="container">-->
+  <!--{{> new}}-->
+  <!--</div>-->
+
+  <ul id="results">
+   {{#each signups}}
+    {{> signup}}
+  {{/each}}
+  </ul>
+  
+  
+  {{#if submitting}} 
+    {{> new}}
+    {{> cancel_entry_button}}
+  {{else}}  
+    {{> new_entry_button}}
+    {{/if}} 
+</body>
+
+<template name="signup">
+  <li class="signup">
+    <span class="name" data-field="name" data-val="{{name}}">{{name}}</span>
+    <span class="selector" data-field="selector" data-val="{{selector}}">{{{highlight_selector}}}</span>
+    <span class="fail" data-field="fail" data-val="{{fail}}">{{fail}}</span><span class="punctuation" data-field="punctuation" data-val="{{punctuation}}">{{punctuation}}</span>
+    <!--<a href="#" class="delete">&#9746;</a>-->
+  </li>
+</template>
+
+<template name="new_entry_button">
+  <input type="button" value="add a failure" class="new_entry_button">
+</template>
+
+<template name="cancel_entry_button">
+  <input type="button" value="fuck it" class="cancel_entry_button">
+</template>
+
+<template name="new">
+  <form class="basic">
+    <input type="text" name="name" placeholder="name">
+
+<div class="styled-select">
+      <select name="selector">
+  <option value="failed">failed</option>
+  <option value="forgot">forgot</option>
+  <option value="missed">missed</option>
+  <option value="didn't">didn't</option>
+  <option value="didn't feel like">didn't feel like</option>
+  <option value="was too busy">was too busy</option>
+  <option value="was too lazy">was too lazy</option>
+   <option value="was too tired">was too tired</option>
+      </select>
+</div>
+      <input id="tags" type="text" name="fail" placeholder="failure">
+
+<div class="styled-select">      
+      <select name="punctuation">
+  <option value="!!!">!!!</option>
+  <option value="!">!</option>
+  <option value="...">...</option>
+  <option value=".">.</option>
+      </select>
+</div>
+      
+    <input type="submit" value="submit your failure" name="submit">
+  </form>
+</template>

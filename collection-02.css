@@ -93,8 +93,7 @@ li.signup {
 }
     
 .styled-select select {
-   background: white;
-   display: inline;
+   background: url(http://jacobhoving.nl/png/tryout.png) display: inline;
    font-size: 27px;
    font-weight: normal;
     font-family: helvetica, sans-serif;
